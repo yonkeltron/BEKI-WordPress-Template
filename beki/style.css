@@ -1,0 +1,416 @@
+/*
+Theme Name: BEKI
+Description: Based on the <a href="http://html5boilerplate.com">HTML5 Boilerplate,</a> Bruce Lawson's <a href="http://html5doctor.com/designing-a-blog-with-html5/">Designing a Blog with HTML5</a> and Steve Heffernan's <a href="http://github.com/zencoder/html5-boilerplate-for-wordpress">Boilerplate base theme.</a>
+Version: 1.0
+Author: Noah Ottenstein
+Author URI: http://tnintegratedsolutions.com/
+Tags: white, two-columns
+
+*/
+
+
+/* Colors
+---------------------------------
+ * header blue:		#00558f
+ * page bg grey:	#ecf0f1
+ * footer grey:		#cdd1d4
+ * text:			#333333
+ * links:			#00558f
+ * header text		#00558f
+ * highlight green	#0db24c
+ */
+
+/*
+HTML Boilerplate styles can be found in the html5-boilerplate/css directory.
+*/
+
+::-moz-selection {
+	background: #0db24c
+}
+::selection {
+	background: #0db24c;
+}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+	background-color: #00558f;
+	line-height: 1.5em;
+	color: #333;
+}
+
+p {
+	margin: 1em 0;
+}
+
+h1, h2, h3 {
+	color: #00558f;
+}
+
+h1 {
+	font-size: 2.25em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.75em;
+	font-weight: normal;
+}
+
+#container {
+	margin-top: 4em;
+	background-color: #ecf0f1;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EAEEEF), to(#FFFFFF));
+	position: relative;
+}
+
+#container>header {
+	width: 67em;
+	height: 3em;
+	margin: 0 auto;
+	padding: 1em 1em 0;
+	background-color: #00558f;
+	text-align: right;
+	color: white;
+	position: absolute;
+	top: -4em;
+	left: 0;
+	right: 0;
+}
+
+#container>header h1, #container>header h2 {
+	color: white;
+	font-family: "Century Gothic", "Avant Garde", "Futura", sans-serif;
+	font-weight: 100;
+}
+#container>header h1 { font-size: 1.5em;}
+#container>header h2 { font-size: .85em;}
+
+#page {
+	position: relative;
+	width: 69em;
+	margin: 0 auto;
+}
+
+#main {
+	float: right;
+	margin-top: -2px;
+	width: 41em;
+	padding: 1em 1em 12em;
+	position: relative;
+	background-color: white;
+	-webkit-box-shadow:0px 2px 8px #333333;
+	-moz-box-shadow:0px 2px 8px #333333;
+	box-shadow:0px 2px 8px #333333;
+	min-height: 40em;
+	z-index: 1;
+}
+
+#main .tab {
+	position: absolute;
+	top: -1.5em;
+	left: 0;
+	background-color: white;
+	width: 8em;
+	height: 1.5em;
+}
+	
+
+#main-footer-bg {
+	background-color: #cdd1d4;
+	clear: both;
+	height: 14em;
+	bottom: 5em;
+	left: 0px;
+	position: absolute;
+	right: 0px;
+	z-index: 0;
+}
+
+#main-footer,
+footer#main-sub {
+	width: 69em;
+	margin: 2em auto 0;
+	text-align: center;
+	padding: 1em;
+}
+
+#main-footer {
+	position: absolute;
+	bottom: -2em;
+	z-index: 2;
+	height: 12em;
+	background-color: rgb(205,209,212);
+	background: -webkit-gradient(linear, 0% 0%, 0% 50%, from(rgba(205,209,212,.85)), to(rgba(205,209,212,1)));
+	background: -moz-linear-gradient(0% 0% 270deg,rgba(205,209,212,.85), rgba(205,209,212,1), rgba(205,209,212,1) 100%);
+}
+
+footer#main-sub p {
+	margin: 0;
+}
+
+#main-footer .widget-area {
+	float: left;
+	margin: 0 1em;
+	text-align: left;
+	color: #111;
+	min-height: 1em;
+}
+
+#main-footer .widget-area a {
+	color: #00558F;
+	text-decoration: none;
+}
+#main-footer .widget-area a:hover {
+	text-decoration: underline;
+}
+
+#footer-widget-area #first {
+	width: 23em;
+}
+
+#main-footer .widget-area:first-child {
+	margin-left 0;
+}
+#main-footer .widget-area:last-child {
+	margin-right 0;
+}
+
+#footer-widget-area #second,
+#footer-widget-area #third {
+	width: 19.25em;
+}
+
+#footer-widget-area h1,
+#footer-widget-area h2,
+#footer-widget-area h3 {
+	color: white;
+}
+
+#footer-widget-area h2 {
+	padding-bottom: .5em;
+	margin-bottom: .5em;
+	border-bottom: 1px dotted white;
+}
+
+/* footer on homepage */
+.home #footer-widget-area #second,
+.home #footer-widget-area #third {
+	display: none;
+}
+
+.home #main-footer {
+	height: 5em;
+}
+
+.home #main-footer-bg {
+	height: 7em;
+}
+
+aside,
+#sidebar {
+	float: left;
+}
+
+#sidebar section {
+	max-width: 25em;
+}
+
+#sidebar .font-adjust {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#sidebar .logo {
+	margin: 3em 0;
+}
+
+#sidebar .search {
+	margin: 5em 0 0;
+}
+
+#sidebar #searchform {
+	text-align: center;
+}
+
+#sidebar .search input {
+	padding: .25em;
+	border: solid thin #666;
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+}
+
+#sidebar .search input:focus {
+	border-color: #0db24c;
+	outline: none;
+}
+
+#sidebar .search #s {
+	color: #333;
+	width: 10em;
+	border-color: #ddd;
+	background-color: #fff;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
+	background: -moz-linear-gradient(19% 75% 270deg,#fff, #eee);
+	opacity: .75;
+}
+#sidebar .search #s:hover {
+	opacity: 1;
+}
+#sidebar .search #s:focus {
+	border-color: #0db24c;
+	opacity: 1;
+}
+
+#sidebar .search #searchsubmit {
+	color: #fff;
+	width: 3em;
+	font-weight: bold;
+	border-color: #666;
+	background-color: #333;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbb), to(#666));
+	background: -moz-linear-gradient(19% 75% 270deg,#bbb, #666);
+	text-shadow: 1px 1px 1px #000;
+	opacity: .75;
+	cursor: pointer;
+}
+#sidebar .search #searchsubmit:hover,
+#sidebar .search #searchsubmit:focus {
+	opacity: 1;
+}
+
+#sidebar nav {
+	width: 14em;
+	position: relative;
+	background-color: white;
+	border: 1px solid #e3e3e3;
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	-border-radius: .5em;
+	margin: 1em auto;
+	padding: 2em;
+}
+
+#sidebar nav ul {
+	margin: 0;
+	list-style: inside disc;
+	z-index: 10;
+	position: relative;
+}
+
+#sidebar nav li {
+	padding: .5em 0;
+	border-bottom: 1px dotted #ccc;
+}
+#sidebar nav li:first-child {
+	padding-top: 0;
+}
+#sidebar nav li:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+#sidebar nav a {
+	text-decoration: none;
+	color: #00558f;
+}
+
+#sidebar nav #background {
+	position: absolute;
+	width: 23.0769231em;
+	bottom: -4em;
+	right: -4.17em;
+	z-index: 0;
+}
+#sidebar nav #background img {
+	width: 100%;
+}
+
+#sidebar .contact {
+	text-align: center;
+	color: #666;
+}
+
+.contact .address {
+	font-size: .85em;
+}
+
+#primary.widget-area {
+	min-height: 4em;
+}
+
+aside#sidebar-right {
+	position: absolute;
+	left: 71em;
+	top: 3em;
+}
+
+#sidebar .widget-area #wp-calendar {
+	margin: 0 auto;
+}
+
+/* Posts & Pages */
+.post header img {
+	width: 100%;
+	height: auto;
+}
+
+.post header #header-image-gradient {
+	height: 28px;
+	left: 1em; right: 1em;
+	top: .85em;
+	position: absolute;
+	background: url('/~noah/BEKI/wp-content/themes/beki/images/white-gradient.png');
+}
+
+
+
+
+/* WordPress Required Styles */
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
+.sticky {
+	background: #f7f7f7;
+	padding: 0 10px 10px;
+}
+	
+.sticky h2 {
+	padding-top: 10px;
+}
